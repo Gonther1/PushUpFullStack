@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* main *
+{
+    border: 1px solid black;
+}  */
+
+main 
+{
+     
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    height: 100vh;
+    
+}
+ul 
+{
+    gap: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 10% 0 20% 0;
+    font-size: 25px;
+    height: 40%;
+    align-items: end;
+}
+ul li {
+    width: 80%;
+}
+.left
+{
+    text-decoration: none;
+    width: 100%; 
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.left h1 
+{
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+.left-down
+{
+    font-size: 25px;
+    height: 40%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-down p 
+{
+    width: 80%;
+}
+.right
+{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#contenedor-productos
+{
+    height: 93%;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            300px,
+            1fr
+        )
+    );
+    gap: 8px;
+    overflow: auto;
+}
+.producto
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.producto h1 
+{
+    width: 80%;
+}
+.producto-detalles
+{
+    width: 80%;
+}
+.producto-image
+{
+    width: 10vw;
+}
+.producto-image img 
+{
+    width: 100%;
+}
+.producto-agregar, .producto-precio
+{
+    width: 40%;
+}
+.producto-detalles-div
+{
+    display: flex;
+    justify-content: space-between;
+}
+.producto img 
+{
+    height: 80%;
+}
+.producto-detalles
+{
+    height: 20%;
+}
+  
+@media (max-width: 650px)
+{
+    main
+    {
+        grid-template-columns: 1fr;
+    }
+}
